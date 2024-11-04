@@ -1,0 +1,69 @@
+﻿@model IEnumerable<newmoi2.Models.CHIEN_DICH>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TEN_CHIEN_DICH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MO_TA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.THOI_GIAN_BAT_DAU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.THOI_GIAN_KET_THUC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DIEN_TICH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MAX_THAM_GIA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SO_NGUOI_DA_DANG_KY)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TEN_CHIEN_DICH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MO_TA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.THOI_GIAN_BAT_DAU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.THOI_GIAN_KET_THUC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DIEN_TICH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MAX_THAM_GIA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SO_NGUOI_DA_DANG_KY)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CHIEN_DICH_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CHIEN_DICH_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CHIEN_DICH_ID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="k22cnt3_tavanthang_project02ModelStoreContainer" CdmEntityContainer="tvtEntities">
+    <EntitySetMapping Name="CHIEN_DICH">
+      <EntityTypeMapping TypeName="k22cnt3_tavanthang_project02Model.CHIEN_DICH">
+        <MappingFragment StoreEntitySet="CHIEN_DICH">
+          <ScalarProperty Name="CHIEN_DICH_ID" ColumnName="CHIEN_DICH_ID" />
+          <ScalarProperty Name="TEN_CHIEN_DICH" ColumnName="TEN_CHIEN_DICH" />
+          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
+          <ScalarProperty Name="THOI_GIAN_BAT_DAU" ColumnName="THOI_GIAN_BAT_DAU" />
+          <ScalarProperty Name="THOI_GIAN_KET_THUC" ColumnName="THOI_GIAN_KET_THUC" />
+          <ScalarProperty Name="DIEN_TICH" ColumnName="DIEN_TICH" />
+          <ScalarProperty Name="MAX_THAM_GIA" ColumnName="MAX_THAM_GIA" />
+          <ScalarProperty Name="SO_NGUOI_DA_DANG_KY" ColumnName="SO_NGUOI_DA_DANG_KY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DAT_HANG">
+      <EntityTypeMapping TypeName="k22cnt3_tavanthang_project02Model.DAT_HANG">
+        <MappingFragment StoreEntitySet="DAT_HANG">
+          <ScalarProperty Name="DAT_HANG_ID" ColumnName="DAT_HANG_ID" />
+          <ScalarProperty Name="KHACH_HANG_ID" ColumnName="KHACH_HANG_ID" />
+          <ScalarProperty Name="NGAY_DAT" ColumnName="NGAY_DAT" />
+          <ScalarProperty Name="TONG_TIEN" ColumnName="TONG_TIEN" />
+          <ScalarProperty Name="TRANG_THAI" ColumnName="TRANG_THAI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACH_HANG">
+      <EntityTypeMapping TypeName="k22cnt3_tavanthang_project02Model.KHACH_HANG">
+        <MappingFragment StoreEntitySet="KHACH_HANG">
+          <ScalarProperty Name="KHACH_HANG_ID" ColumnName="KHACH_HANG_ID" />
+          <ScalarProperty Name="HO_TEN" ColumnName="HO_TEN" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="SODIENTHOAI" ColumnName="SODIENTHOAI" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="NGAY_DANG_KY" ColumnName="NGAY_DANG_KY" />
+          <ScalarProperty Name="MAT_KHAU" ColumnName="MAT_KHAU" />
+          <ScalarProperty Name="TRANG_THAI" ColumnName="TRANG_THAI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOG_HOAT_DONG">
+      <EntityTypeMapping TypeName="k22cnt3_tavanthang_project02Model.LOG_HOAT_DONG">
+        <MappingFragment StoreEntitySet="LOG_HOAT_DONG">
+          <ScalarProperty Name="LOG_ID" ColumnName="LOG_ID" />
+          <ScalarProperty Name="QUAN_TRI_ID" ColumnName="QUAN_TRI_ID" />
+          <ScalarProperty Name="NOI_DUNG" ColumnName="NOI_DUNG" />
+          <ScalarProperty Name="THOI_GIAN" ColumnName="THOI_GIAN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUAN_TRI_VIEN">
+      <EntityTypeMapping TypeName="k22cnt3_tavanthang_project02Model.QUAN_TRI_VIEN">
+        <MappingFragment StoreEntitySet="QUAN_TRI_VIEN">
+          <ScalarProperty Name="QUAN_TRI_ID" ColumnName="QUAN_TRI_ID" />
+          <ScalarProperty Name="HO_TEN" ColumnName="HO_TEN" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="MAT_KHAU" ColumnName="MAT_KHAU" />
+          <ScalarProperty Name="TRANG_THAI" ColumnName="TRANG_THAI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SAN_PHAM">
+      <EntityTypeMapping TypeName="k22cnt3_tavanthang_project02Model.SAN_PHAM">
+        <MappingFragment StoreEntitySet="SAN_PHAM">
+          <ScalarProperty Name="SAN_PHAM_ID" ColumnName="SAN_PHAM_ID" />
+          <ScalarProperty Name="TEN_SAN_PHAM" ColumnName="TEN_SAN_PHAM" />
+          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
+          <ScalarProperty Name="GIA" ColumnName="GIA" />
+          <ScalarProperty Name="SO_LUONG" ColumnName="SO_LUONG" />
+          <ScalarProperty Name="TRANG_THAI" ColumnName="TRANG_THAI" />
+          <ScalarProperty Name="CHIEN_DICH_ID" ColumnName="CHIEN_DICH_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="k22cnt3_tavanthang_project02Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

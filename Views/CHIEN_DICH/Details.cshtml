@@ -1,0 +1,74 @@
+﻿@model newmoi2.Models.CHIEN_DICH
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CHIEN_DICH</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TEN_CHIEN_DICH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TEN_CHIEN_DICH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MO_TA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MO_TA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.THOI_GIAN_BAT_DAU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.THOI_GIAN_BAT_DAU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.THOI_GIAN_KET_THUC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.THOI_GIAN_KET_THUC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DIEN_TICH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DIEN_TICH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MAX_THAM_GIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MAX_THAM_GIA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SO_NGUOI_DA_DANG_KY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SO_NGUOI_DA_DANG_KY)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CHIEN_DICH_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
