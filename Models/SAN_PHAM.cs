@@ -7,21 +7,30 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace newmoi2.Models
+namespace tvt_project2.Models
 {
     using System;
     using System.Collections.Generic;
     
     public partial class SAN_PHAM
     {
-        public int SAN_PHAM_ID { get; set; }
-        public string TEN_SAN_PHAM { get; set; }
-        public string MO_TA { get; set; }
-        public decimal GIA { get; set; }
-        public int SO_LUONG { get; set; }
-        public Nullable<bool> TRANG_THAI { get; set; }
-        public Nullable<int> CHIEN_DICH_ID { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public SAN_PHAM()
+        {
+            this.CT_HOA_DON = new HashSet<CT_HOA_DON>();
+        }
     
-        public virtual CHIEN_DICH CHIEN_DICH { get; set; }
+        public int ID { get; set; }
+        public string MaSanPham { get; set; }
+        public string TenSanPham { get; set; }
+        public string HinhAnh { get; set; }
+        public Nullable<int> SoLuong { get; set; }
+        public Nullable<double> DonGia { get; set; }
+        public Nullable<int> MaLoai { get; set; }
+        public Nullable<byte> TrangThai { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CT_HOA_DON> CT_HOA_DON { get; set; }
+        public virtual LOAI_SAN_PHAM LOAI_SAN_PHAM { get; set; }
     }
 }

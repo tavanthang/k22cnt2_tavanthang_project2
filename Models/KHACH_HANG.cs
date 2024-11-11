@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace newmoi2.Models
+namespace tvt_project2.Models
 {
     using System;
     using System.Collections.Generic;
@@ -17,19 +17,20 @@ namespace newmoi2.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public KHACH_HANG()
         {
-            this.DAT_HANG = new HashSet<DAT_HANG>();
+            this.HOA_DON = new HashSet<HOA_DON>();
         }
     
-        public int KHACH_HANG_ID { get; set; }
-        public string HO_TEN { get; set; }
-        public string EMAIL { get; set; }
-        public string SODIENTHOAI { get; set; }
-        public string DIACHI { get; set; }
-        public Nullable<System.DateTime> NGAY_DANG_KY { get; set; }
-        public string MAT_KHAU { get; set; }
-        public Nullable<bool> TRANG_THAI { get; set; }
+        public int ID { get; set; }
+        public string MaKhachHang { get; set; }
+        public string HoTenKhachHang { get; set; }
+        public string Email { get; set; }
+        public string MaKhau { get; set; }
+        public string DienThoai { get; set; }
+        public string DiaChi { get; set; }
+        public Nullable<System.DateTime> NgayDangKy { get; set; }
+        public Nullable<byte> TrangThai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DAT_HANG> DAT_HANG { get; set; }
+        public virtual ICollection<HOA_DON> HOA_DON { get; set; }
     }
 }
